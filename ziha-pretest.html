@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>COMPUTER ROOM SERVICE</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+     <body class="bg-linear-to-r from-cyan-500 to-blue-500 h-40 w-full">
+  </body>
+    <div class="border-1 mx-10 mt-10 rounded-full bg-sky-200 shadow-xl shadow-red-100 p-2 hover:bg-red-300 text-center text-xl semi-bold text-blue-300 text-shadow-lg p-2">Computer Lab Reservation System</div>
+    <h3>Student Registration Form</h3>
+    <form>
+      <table>           
+        <tr>
+        <td><label>Full Name:</label></td>
+        <td><input type="text" name="Borrower's Name" placeholder="Enter your full name" required maxlength="50" required></td>
+        </tr>
+        <tr>
+        <td><input type="email" name="email" placeholder="Enter your email" maxlength="50" required><br>
+        <label>Password: </label><br>
+        <input type="password" name="password" placeholder="Enter your password" maxlength="50" required><br></td>
+        </tr>
+        <tr>
+        <td> <label for="status">Your Status:</label></td>
+                    <td><select id="status" name="Your Status" required>
+                        <option value="Choose Your Status">Choose Your Status</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Student">Student</option>
+                        <option value="Organization">Organization</option>
+                    </select></td>
+                </tr>
+                <tr>
+        </tr>
+        <label>Gender: </label><br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female <br>
+        <label>Skills: </label><br>
+        <input type="checkbox" name="skills">Reading
+        <input type="checkbox" name="skills">Writing
+        <input type="checkbox" name="skills">Coding
+        <br>
+        <label> About Yourself:</label><br>
+        <textarea rows="5" cols="40" name="about" placeholder="Tell me about yourself" required></textarea>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </tr>
+      </table>
+    </form>
 </body>
 </html>
